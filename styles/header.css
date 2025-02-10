@@ -20,6 +20,26 @@
     height: fit-content;
 }
 
+/* Breadbrumb */
+.header > .breadcrumb {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.header > .breadcrumb > li::before {
+    content: "/";
+    font-weight: bold;
+    position: relative;
+    right: 0.6rem;
+}
+.header > .breadcrumb > li:first-child::before {
+    display: none;
+}
+.header > .breadcrumb a {
+    color: black;
+    text-decoration: none;
+}
+
 .header > .search-btn {
     margin-left: auto;
 }
