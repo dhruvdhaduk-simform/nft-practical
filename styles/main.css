@@ -12,6 +12,21 @@
     --searchbar-search-icon-size: 1.25rem;
     --searchbar-search-icon-margin: 1.125rem;
     --searchbar-font-size: 0.875rem;
+
+    --table-font-size: 1rem;
+    --table-data-font-size: 1.25rem;
+    --table-margin-top: 3.75rem;
+    --table-border-spacing: 0 1rem;
+    --table-items-padding: 1rem;
+    --table-items-border: 1.4px solid #EBEDF2;
+    --table-items-border-radius: 0.625rem;
+    --table-head-items-gap-inside: 0.625rem;
+    --table-body-items-gap-inside: 1rem;
+    --table-body-profilepic-size: 3.5rem;
+    --table-body-follow-btn-font-color: #7B61FF;
+    --table-body-follow-btn-bg-color: #7B61FF28;
+    --table-body-follow-btn-border-radius: 0.625rem;
+    --table-body-follow-btn-padding: 0.625rem;
 }
 
 .main .control-buttons {
@@ -78,4 +93,86 @@
 
     padding-right: calc(2 * var(--searchbar-padding) + var(--searchbar-search-icon-size));
     
+}
+
+
+.creators-data {
+    width: 100%;
+    margin-top: var(--table-margin-top);
+    border-spacing: var(--table-border-spacing);
+    font-size: var(--table-font-size);
+}
+
+.creators-data td {
+    padding: var(--table-items-padding);
+}
+
+.creators-data tbody td {
+    border-top: var(--table-items-border);
+    border-bottom: var(--table-items-border);
+}
+.creators-data tbody td:first-child {
+    border-top-left-radius: var(--table-items-border-radius);
+    border-bottom-left-radius: var(--table-items-border-radius);
+    border-left: var(--table-items-border);
+}
+.creators-data tbody td:last-child {
+    border-top-right-radius: var(--table-items-border-radius);
+    border-bottom-right-radius: var(--table-items-border-radius);
+    border-right: var(--table-items-border);
+}
+
+.creators-data th,
+.creators-data td {
+    text-align: center;
+}
+
+.creators-data .th-creator,
+.creators-data .td-creator {
+    text-align: start;
+}
+
+.creators-data .td-follow-btn {
+    text-align: end;
+}
+
+.creators-data th .container,
+.creators-data td .container
+{
+    display: flex;
+    align-items: center;
+}
+.creators-data th .container {
+    justify-content: center;
+    gap: 10px;
+}
+.creators-data td .container {
+    justify-content: start;
+    gap: 1rem;
+}
+
+.creators-data .td-index,
+.creators-data .td-volume,
+.creators-data .td-sales,
+.creators-data .td-items,
+.creators-data .td-followers {
+    font-size: var(--table-data-font-size);
+}
+
+.creators-data .td-creator img {
+    width: var(--table-body-profilepic-size);
+    aspect-ratio: 1;
+}
+.creators-data .td-creator span {
+    font-weight: bold;
+}
+
+.creators-data .td-follow-btn button {
+    color: var(--table-body-follow-btn-font-color);
+    background-color: var(--table-body-follow-btn-bg-color);
+    border: none;
+    border-radius: var(--table-body-follow-btn-border-radius);
+    font-size: var(--table-font-size);
+    font-weight: bold;
+    padding: var(--table-body-follow-btn-padding);
 }
