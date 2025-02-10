@@ -1,0 +1,14 @@
+.footer {
+    --footer-vertical-padding: 3.75rem;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: var(--footer-vertical-padding);
+    padding-bottom: var(--footer-vertical-padding);
+}
+
+.footer > .footer-left,
+.footer > .footer-right {
+    flex: 1;
+}
