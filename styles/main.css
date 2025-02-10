@@ -1,0 +1,22 @@
+/* Control buttons section */
+.main {
+    --control-buttons-height: 3.5rem;
+    --control-buttons-gap: 1rem;
+}
+
+.main .control-buttons {
+    width: 100%;
+    height: var(--control-buttons-height);
+
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    gap: var(--control-buttons-gap);
+}
+
+.main .control-buttons > button {
+    flex: none;
+}
+.main .control-buttons > .searchbar {
+    flex: 1;
+}
