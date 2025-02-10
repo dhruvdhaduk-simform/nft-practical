@@ -10,6 +10,16 @@
     gap: var(--items-gap);
 }
 
+/* Brand icon section */
+.header > .brand-icon {
+    width: 3.125rem;
+    height: fit-content;
+}
+.header > .brand-icon > img {
+    width: 100%;
+    height: fit-content;
+}
+
 .header > .search-btn {
     margin-left: auto;
 }
