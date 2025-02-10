@@ -1,5 +1,20 @@
 .footer {
     --footer-vertical-padding: 3.75rem;
+    --big-heading-font-size: 2.5rem;
+    --email-top-margin: 1.5rem;
+    --email-font-size: 1.5rem;
+    --subscribe-top-margin: 2.5rem;
+    --subscribe-font-size: 1rem;
+    --email-input-margin-top: 1.5rem;
+    --email-input-min-width: 26.25rem;
+    --email-input-height: 3.5rem;
+    --email-input-padding: 1rem;
+    --email-input-font-size: 0.875rem;
+    --email-input-border-radius: 1rem;
+    --legal-links-margin-top: 4.5rem;
+    --legal-links-font-color: #828282;
+    --legal-links-font-size: 0.875rem;
+    --legal-links-gap: 1.875rem;
     
     display: flex;
     justify-content: space-between;
@@ -11,4 +26,55 @@
 .footer > .footer-left,
 .footer > .footer-right {
     flex: 1;
+}
+
+.footer > .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.footer > .footer-left > .big-heading {
+    font-size: var(--big-heading-font-size);
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.footer > .footer-left > .email {
+    margin-top: var(--email-top-margin);
+    font-size: var(--email-font-size);
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+.footer > .footer-left > .subscribe {
+    margin-top: var(--subscribe-top-margin);
+    font-size: var(--subscribe-font-size);
+    font-weight: 700;
+}
+
+.footer > .footer-left > .email-input {
+    margin-top: var(--email-input-margin-top);
+    width: 100%;
+    min-width: var(--email-input-min-width);
+    height: var(--email-input-height);
+    border-radius: var(--email-input-border-radius);
+    padding: var(--email-input-padding);
+    font-size: var(--email-input-font-size);
+}
+
+.footer > .footer-left > .legal-links {
+    margin-top: var(--legal-links-margin-top);
+    font-size: var(--legal-links-font-size);
+    display: flex;
+    justify-content: sta;
+    align-items: center;
+    gap: var(--legal-links-gap);
+}
+
+.footer > .footer-left > .legal-links > a {
+    color: var(--legal-links-font-color);
+    text-decoration: none;
 }
