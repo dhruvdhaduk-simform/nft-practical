@@ -7,9 +7,12 @@
 :root {
     font-family: sans-serif;
 
-    --page-max-width: 71.25rem;
+    --page-max-width: 90rem;
+    --main-max-width: 71.25rem;
     --header-height: 6.25rem;
     --main-section-padding-top: 2.5rem;
+    --footer-border-top: 1px solid #EBEDF2;
+    --footer-margin-top: 4rem;
 }
 
 body {
@@ -26,14 +29,20 @@ body {
     max-width: var(--page-max-width);
     margin: auto;
     height: var(--header-height);
+    background-color: white;
 }
 
 .main {
     margin-top: var(--header-height);
     padding-top: var(--main-section-padding-top);
     width: 100%;
+    max-width: var(--main-max-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
     width: 100%;
+    border-top: var(--footer-border-top);
+    margin-top: var(--footer-margin-top);
 }
