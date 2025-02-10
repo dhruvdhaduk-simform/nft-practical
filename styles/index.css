@@ -9,6 +9,7 @@
 
     --page-max-width: 71.25rem;
     --header-height: 6.25rem;
+    --main-section-padding-top: 2.5rem;
 }
 
 body {
@@ -29,11 +30,8 @@ body {
 
 .main {
     margin-top: var(--header-height);
+    padding-top: var(--main-section-padding-top);
     width: 100%;
-
-    /* Temp. styles */
-    height: 5rem;
-    background-color: blue;
 }
 
 .footer {

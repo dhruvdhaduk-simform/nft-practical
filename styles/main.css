@@ -1,0 +1,181 @@
+/* Control buttons section */
+.main {
+    --control-buttons-margin-top: 2.5rem;
+    --control-buttons-height: 3.5rem;
+    --control-buttons-gap: 1rem;
+    --control-buttons-gap-inside: 0.625rem;
+    --control-buttons-font-size: 1.25rem;
+    --control-buttons-icon-size: 1.5rem;
+    --control-buttons-bg-color: #EBEDF2;
+    --control-buttons-border-radius: 0.625rem;
+    --searchbar-border-radius: 0.625rem;
+    --searchbar-padding: 1rem;
+    --searchbar-search-icon-size: 1.25rem;
+    --searchbar-search-icon-margin: 1.125rem;
+    --searchbar-font-size: 0.875rem;
+
+    --table-font-size: 1rem;
+    --table-data-font-size: 1.25rem;
+    --table-margin-top: 3.75rem;
+    --table-border-spacing: 0 1rem;
+    --table-items-padding: 1rem;
+    --table-items-border: 1.4px solid #EBEDF2;
+    --table-items-border-radius: 0.625rem;
+    --table-head-items-gap-inside: 0.625rem;
+    --table-body-items-gap-inside: 1rem;
+    --table-body-profilepic-size: 3.5rem;
+    --table-body-follow-btn-font-color: #7B61FF;
+    --table-body-follow-btn-bg-color: #7B61FF28;
+    --table-body-follow-btn-border-radius: 0.625rem;
+    --table-body-follow-btn-padding: 0.625rem;
+}
+
+.main .control-buttons {
+    width: 100%;
+    height: var(--control-buttons-height);
+
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    gap: var(--control-buttons-gap);
+}
+
+.main .control-buttons > button {
+    flex: none;
+
+    min-width: var(--control-buttons-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--control-buttons-gap-inside);
+    background-color: var(--control-buttons-bg-color);
+    border: none;
+    border-radius: var(--control-buttons-border-radius);
+    cursor: pointer;
+}
+
+.main .control-buttons > button > span {
+    font-size: var(--control-buttons-font-size);
+}
+
+.main .control-buttons > button > img {
+    width: var(--control-buttons-icon-size);
+    aspect-ratio: 1;
+}
+
+/* Set the horizontal padding for different buttons */
+.main .control-buttons > .filters-btn {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+.main .control-buttons > .nfts-btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.main .control-buttons > .sort-btn {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+}
+
+/* Search bar */
+.main .control-buttons > .searchbar {
+    flex: 1;
+    outline: none;
+    border: 2px solid black;
+    padding: var(--searchbar-padding);
+    border-radius: var(--searchbar-border-radius);
+    font-size: var(--searchbar-font-size);
+
+    background-image: url("/assets/icons/search.svg");
+    background-repeat: no-repeat;
+    background-size: var(--searchbar-search-icon-size);
+    background-position-x: calc(100% - var(--searchbar-search-icon-margin));
+    background-position-y: center;
+
+    padding-right: calc(2 * var(--searchbar-padding) + var(--searchbar-search-icon-size));
+    
+}
+
+
+.creators-data {
+    width: 100%;
+    margin-top: var(--table-margin-top);
+    border-spacing: var(--table-border-spacing);
+    font-size: var(--table-font-size);
+}
+
+.creators-data td {
+    padding: var(--table-items-padding);
+}
+
+.creators-data tbody td {
+    border-top: var(--table-items-border);
+    border-bottom: var(--table-items-border);
+}
+.creators-data tbody td:first-child {
+    border-top-left-radius: var(--table-items-border-radius);
+    border-bottom-left-radius: var(--table-items-border-radius);
+    border-left: var(--table-items-border);
+}
+.creators-data tbody td:last-child {
+    border-top-right-radius: var(--table-items-border-radius);
+    border-bottom-right-radius: var(--table-items-border-radius);
+    border-right: var(--table-items-border);
+}
+
+.creators-data th,
+.creators-data td {
+    text-align: center;
+}
+
+.creators-data .th-creator,
+.creators-data .td-creator {
+    text-align: start;
+}
+
+.creators-data .td-follow-btn {
+    text-align: end;
+}
+
+.creators-data th .container,
+.creators-data td .container
+{
+    display: flex;
+    align-items: center;
+}
+.creators-data th .container {
+    justify-content: center;
+    gap: 10px;
+}
+.creators-data td .container {
+    justify-content: start;
+    gap: 1rem;
+}
+
+.creators-data .td-index,
+.creators-data .td-volume,
+.creators-data .td-sales,
+.creators-data .td-items,
+.creators-data .td-followers {
+    font-size: var(--table-data-font-size);
+}
+
+.creators-data .td-creator img {
+    width: var(--table-body-profilepic-size);
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+.creators-data .td-creator span {
+    font-weight: bold;
+}
+
+.creators-data .td-follow-btn button {
+    color: var(--table-body-follow-btn-font-color);
+    background-color: var(--table-body-follow-btn-bg-color);
+    border: none;
+    border-radius: var(--table-body-follow-btn-border-radius);
+    font-size: var(--table-font-size);
+    font-weight: bold;
+    padding: var(--table-body-follow-btn-padding);
+    cursor: pointer;
+}

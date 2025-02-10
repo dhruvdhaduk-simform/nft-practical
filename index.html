@@ -6,6 +6,7 @@
         <title>NFT Practical</title>
         <link rel="stylesheet" href="/styles/index.css">
         <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/main.css">
     </head>
     <body>
         <header class="header">
@@ -43,6 +44,410 @@
         </header>
 
         <main class="main">
+            <div class="control-buttons">
+                <button class="filters-btn">
+                    <img src="/assets/icons/settings.svg" alt="">
+                    <span>Filters</span>
+                </button>
+
+                <button class="nfts-btn">
+                    <span>NFT's</span>
+                    <img src="/assets/icons/down_arrow.svg" alt="">
+                </button>
+
+                <input type="text" class="searchbar" placeholder="Search by collection, user or NFT...">
+
+                <button class="sort-btn">
+                    <span>Tranding</span>
+                    <img src="/assets/icons/down_arrow.svg" alt="">
+                </button>
+
+                <button class="grid-view-btn">
+                    <img src="/assets/icons/grid_view.svg" alt="">
+                </button>
+
+                <button class="list-view-btn">
+                    <img src="/assets/icons/list_view.svg" alt="">
+                </button>
+            </div>
+
+            <table class="creators-data">
+                <thead>
+                    <tr>
+                        <th class="th-index"></th>
+                        <th class="th-creator">
+                            Creator
+                        </th>
+                        <th class="th-volume">
+                            <div class="container">
+                                <span>Volume (USD)</span>
+                                <img src="/assets/icons/info.svg">
+                            </div>
+                        </th>
+                        <th class="th-sales">
+                            <div class="container">
+                                <span>Sales</span>
+                                <img src="/assets/icons/info.svg">
+                            </div>
+                        </th>
+                        <th class="th-items">
+                            <div class="container">
+                                <span>Items</span>
+                                <img src="/assets/icons/info.svg">
+                            </div>
+                        </th>
+                        <th class="th-followers">
+                            <div class="container">
+                                <span>Followers</span>
+                                <img src="/assets/icons/info.svg">
+                            </div>
+                        </th>
+                        <th class="th-follow-btn"></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="td-index">1</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/1.png" alt="">
+                                <span>@Msarterium</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">15,085,035.95</td>
+                        <td class="td-sales">111,850</td>
+                        <td class="td-items">50,850</td>
+                        <td class="td-followers">10,150</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">2</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/2.png" alt="">
+                                <span>@Shakinsir</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">25,035,010.95</td>
+                        <td class="td-sales">82,750</td>
+                        <td class="td-items">24,150</td>
+                        <td class="td-followers">8,212</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">3</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/3.png" alt="">
+                                <span>@S75Studio</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">7,120,050.80</td>
+                        <td class="td-sales">95,230</td>
+                        <td class="td-items">11,350</td>
+                        <td class="td-followers">6,215</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">4</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/4.png" alt="">
+                                <span>@GraphicMuzic</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">15,085,035.95</td>
+                        <td class="td-sales">65,180</td>
+                        <td class="td-items">24,150</td>
+                        <td class="td-followers">10,150</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">5</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/5.png" alt="">
+                                <span>@Marterium</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">25,035,010.95</td>
+                        <td class="td-sales">111,850</td>
+                        <td class="td-items">11,350</td>
+                        <td class="td-followers">1,892</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">6</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/6.png" alt="">
+                                <span>@Msarterium</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">2,002,875.00</td>
+                        <td class="td-sales">95,230</td>
+                        <td class="td-items">50,850</td>
+                        <td class="td-followers">8,212</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">7</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/7.png" alt="">
+                                <span>@Msarterium</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">15,085,035.95</td>
+                        <td class="td-sales">111,850</td>
+                        <td class="td-items">11,350</td>
+                        <td class="td-followers">10,150</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">8</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/8.png" alt="">
+                                <span>@Shakinsir</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">7,120,050.80</td>
+                        <td class="td-sales">82,750</td>
+                        <td class="td-items">24,150</td>
+                        <td class="td-followers">6,215</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">9</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/9.png" alt="">
+                                <span>@S75Studio</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">2,002,875.00</td>
+                        <td class="td-sales">65,180</td>
+                        <td class="td-items">8,350</td>
+                        <td class="td-followers">8,212</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">10</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/10.png" alt="">
+                                <span>@GraphicMuzic</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">15,085,035.95</td>
+                        <td class="td-sales">95,230</td>
+                        <td class="td-items">50,850</td>
+                        <td class="td-followers">1,892</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">11</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/11.png" alt="">
+                                <span>@Msarterium</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">15,085,035.95</td>
+                        <td class="td-sales">111,850</td>
+                        <td class="td-items">50,850</td>
+                        <td class="td-followers">10,150</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">12</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/12.png" alt="">
+                                <span>@Shakinsir</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">25,035,010.95</td>
+                        <td class="td-sales">82,750</td>
+                        <td class="td-items">24,150</td>
+                        <td class="td-followers">8,212</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">13</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/13.png" alt="">
+                                <span>@S75Studio</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">7,120,050.80</td>
+                        <td class="td-sales">95,230</td>
+                        <td class="td-items">11,350</td>
+                        <td class="td-followers">6,215</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">14</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/1.png" alt="">
+                                <span>@GraphicMuzic</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">15,085,035.95</td>
+                        <td class="td-sales">65,180</td>
+                        <td class="td-items">24,150</td>
+                        <td class="td-followers">10,150</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">15</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/15.png" alt="">
+                                <span>@Msarterium</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">25,035,010.95</td>
+                        <td class="td-sales">111,850</td>
+                        <td class="td-items">11,350</td>
+                        <td class="td-followers">1,892</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">16</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/16.png" alt="">
+                                <span>@Msarterium</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">2,002,875.00</td>
+                        <td class="td-sales">95,230</td>
+                        <td class="td-items">50,850</td>
+                        <td class="td-followers">8,212</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">17</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/17.png" alt="">
+                                <span>@Msarterium</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">15,085,035.95</td>
+                        <td class="td-sales">111,850</td>
+                        <td class="td-items">11,350</td>
+                        <td class="td-followers">10,150</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">18</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/18.png" alt="">
+                                <span>@Shakinsir</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">7,120,050.80</td>
+                        <td class="td-sales">82,750</td>
+                        <td class="td-items">24,150</td>
+                        <td class="td-followers">6,215</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">19</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/19.png" alt="">
+                                <span>@S75Studio</span>
+                            </div>
+                        </td>
+                        <td class="td-volume">2,002,875.00</td>
+                        <td class="td-sales">65,180</td>
+                        <td class="td-items">8,350</td>
+                        <td class="td-followers">8,212</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-index">20</td>
+                        <td class="td-creator">
+                            <div class="container">
+                                <img src="/assets/profilepics/20.png" alt="">
+                                <span>@GraphicMuzic </span>
+                            </div>
+                        </td>
+                        <td class="td-volume">15,085,035.95</td>
+                        <td class="td-sales">95,230</td>
+                        <td class="td-items">50,850</td>
+                        <td class="td-followers">1,892</td>
+                        <td class="td-follow-btn">
+                            <button>Follow</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             
         </main>
 
