@@ -12,6 +12,8 @@
     --email-input-font-size: 0.875rem;
     --email-input-border-radius: 1rem;
     --email-input-icon-size: 1rem;
+    --email-input-label-font-size: 0.75rem;
+    --email-input-label-font-color: #828282;
     --legal-links-margin-top: 4.5rem;
     --legal-links-font-color: #828282;
     --legal-links-font-size: 0.875rem;
@@ -66,8 +68,23 @@
     font-weight: 700;
 }
 
-.footer > .footer-left > .email-input {
+.footer > .footer-left > .email-input-container {
     margin-top: var(--email-input-margin-top);
+    width: 100%;
+    position: relative;
+}
+.footer > .footer-left .email-input-label {
+    background-color: white;
+    font-size: var(--email-input-label-font-size);
+    color: var(--email-input-label-font-color);
+    position: absolute;
+    z-index: 1;
+    top: -0.5rem;
+    left: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.footer > .footer-left .email-input {
     width: 100%;
     min-width: var(--email-input-min-width);
     height: var(--email-input-height);
