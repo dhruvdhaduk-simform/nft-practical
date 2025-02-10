@@ -25,9 +25,6 @@ body {
     max-width: var(--page-max-width);
     margin: auto;
     height: var(--header-height);
-
-    /* Temp. style */
-    background-color: red;
 }
 
 .main {

@@ -1,0 +1,76 @@
+.header {
+    --horizontal-padding: 3.125rem;
+    --items-gap: 3.75rem;
+    --button-icon-size: 1.25rem;
+    --button-children-gap: 1rem;
+    --button-font-size: 0.875rem;
+    --more-button-icon-size: 3.125rem;
+    
+    padding-left: var(--horizontal-padding);
+    padding-right: var(--horizontal-padding);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: var(--items-gap);
+}
+
+/* Brand icon section */
+.header > .brand-icon {
+    width: 3.125rem;
+    height: fit-content;
+}
+.header > .brand-icon > img {
+    width: 100%;
+    height: fit-content;
+}
+
+/* Breadbrumb */
+.header > .breadcrumb {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.header > .breadcrumb > li::before {
+    content: "/";
+    font-weight: bold;
+    position: relative;
+    right: 0.6rem;
+}
+.header > .breadcrumb > li:first-child::before {
+    display: none;
+}
+.header > .breadcrumb a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Buttons */
+.header > button {
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--button-children-gap);
+    font-size: var(--button-font-size);
+    cursor: pointer;
+}
+
+.header > .search-btn {
+    /* Push the buttons to right side */
+    margin-left: auto;
+}
+.header > .search-btn > img {
+    width: var(--button-icon-size);
+    aspect-ratio: 1;
+}
+
+.header > .signin-btn > img {
+    width: var(--button-icon-size);
+    aspect-ratio: 1;
+}
+
+.header > .more-btn > img {
+    width: var(--more-button-icon-size);
+    aspect-ratio: 1;
+}
