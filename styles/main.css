@@ -7,6 +7,11 @@
     --control-buttons-icon-size: 1.5rem;
     --control-buttons-bg-color: #EBEDF2;
     --control-buttons-border-radius: 0.625rem;
+    --searchbar-border-radius: 0.625rem;
+    --searchbar-padding: 1rem;
+    --searchbar-search-icon-size: 1.25rem;
+    --searchbar-search-icon-margin: 1.125rem;
+    --searchbar-font-size: 0.875rem;
 }
 
 .main .control-buttons {
@@ -56,6 +61,21 @@
     padding-right: 1.125rem;
 }
 
+/* Search bar */
 .main .control-buttons > .searchbar {
     flex: 1;
+    outline: none;
+    border: 2px solid black;
+    padding: var(--searchbar-padding);
+    border-radius: var(--searchbar-border-radius);
+    font-size: var(--searchbar-font-size);
+
+    background-image: url("/assets/icons/search.svg");
+    background-repeat: no-repeat;
+    background-size: var(--searchbar-search-icon-size);
+    background-position-x: calc(100% - var(--searchbar-search-icon-margin));
+    background-position-y: center;
+
+    padding-right: calc(2 * var(--searchbar-padding) + var(--searchbar-search-icon-size));
+    
 }
