@@ -11,6 +11,7 @@
     --email-input-padding: 1rem;
     --email-input-font-size: 0.875rem;
     --email-input-border-radius: 1rem;
+    --email-input-icon-size: 1rem;
     --legal-links-margin-top: 4.5rem;
     --legal-links-font-color: #828282;
     --legal-links-font-size: 0.875rem;
@@ -73,8 +74,18 @@
     border-radius: var(--email-input-border-radius);
     padding: var(--email-input-padding);
     font-size: var(--email-input-font-size);
-}
 
+    background-image: url("/assets/icons/send.svg");
+    background-repeat: no-repeat;
+    background-size: var(--email-input-icon-size);
+    background-position-x: calc(100% - var(--email-input-padding));
+    background-position-y: center;
+
+    padding-right: 2.5rem;
+
+    border: 2px solid black;
+    position: relative;
+}
 .footer > .footer-left > .legal-links {
     margin-top: var(--legal-links-margin-top);
     font-size: var(--legal-links-font-size);
