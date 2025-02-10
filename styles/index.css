@@ -27,6 +27,7 @@ body {
     max-width: var(--page-max-width);
     margin: auto;
     height: var(--header-height);
+    background-color: white;
 }
 
 .main {
