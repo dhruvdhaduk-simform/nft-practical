@@ -30,10 +30,6 @@ body {
 .main {
     margin-top: var(--header-height);
     width: 100%;
-
-    /* Temp. styles */
-    height: 5rem;
-    background-color: blue;
 }
 
 .footer {
