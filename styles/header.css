@@ -1,6 +1,10 @@
 .header {
     --horizontal-padding: 3.125rem;
     --items-gap: 3.75rem;
+    --button-icon-size: 1.25rem;
+    --button-children-gap: 1rem;
+    --button-font-size: 0.875rem;
+    --more-button-icon-size: 3.125rem;
     
     padding-left: var(--horizontal-padding);
     padding-right: var(--horizontal-padding);
@@ -40,6 +44,33 @@
     text-decoration: none;
 }
 
+/* Buttons */
+.header > button {
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--button-children-gap);
+    font-size: var(--button-font-size);
+    cursor: pointer;
+}
+
 .header > .search-btn {
+    /* Push the buttons to right side */
     margin-left: auto;
+}
+.header > .search-btn > img {
+    width: var(--button-icon-size);
+    aspect-ratio: 1;
+}
+
+.header > .signin-btn > img {
+    width: var(--button-icon-size);
+    aspect-ratio: 1;
+}
+
+.header > .more-btn > img {
+    width: var(--more-button-icon-size);
+    aspect-ratio: 1;
 }
