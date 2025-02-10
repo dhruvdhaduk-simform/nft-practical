@@ -163,6 +163,7 @@
 .creators-data .td-creator img {
     width: var(--table-body-profilepic-size);
     aspect-ratio: 1;
+    cursor: pointer;
 }
 .creators-data .td-creator span {
     font-weight: bold;
@@ -176,4 +177,5 @@
     font-size: var(--table-font-size);
     font-weight: bold;
     padding: var(--table-body-follow-btn-padding);
+    cursor: pointer;
 }
