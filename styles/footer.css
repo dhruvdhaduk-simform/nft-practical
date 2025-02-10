@@ -1,0 +1,159 @@
+.footer {
+    --footer-vertical-padding: 3.75rem;
+    --big-heading-font-size: 2.5rem;
+    --email-top-margin: 1.5rem;
+    --email-font-size: 1.5rem;
+    --subscribe-top-margin: 2.5rem;
+    --subscribe-font-size: 1rem;
+    --email-input-margin-top: 1.5rem;
+    --email-input-min-width: 26.25rem;
+    --email-input-height: 3.5rem;
+    --email-input-padding: 1rem;
+    --email-input-font-size: 0.875rem;
+    --email-input-border-radius: 1rem;
+    --email-input-icon-size: 1rem;
+    --email-input-label-font-size: 0.75rem;
+    --email-input-label-font-color: #828282;
+    --legal-links-margin-top: 4.5rem;
+    --legal-links-font-color: #828282;
+    --legal-links-font-size: 0.875rem;
+    --legal-links-gap: 1.875rem;
+
+    --other-pages-links-margin-top: 8.125rem;
+    --other-pages-links-font-size: 1.25rem;
+    --other-pages-links-gap: 1rem;
+    --social-media-margin-top: 11.875rem;
+    --social-media-gap: 2.5rem;
+    --social-media-icon-size: 2rem;
+    --copyright-margin-top: 5.25rem;
+    --copyright-font-size: 1rem;
+    --copyright-font-color: #3B5266;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: var(--footer-vertical-padding);
+    padding-bottom: var(--footer-vertical-padding);
+}
+
+.footer > .footer-left,
+.footer > .footer-right {
+    flex: 1;
+}
+
+.footer > .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.footer > .footer-left > .big-heading {
+    font-size: var(--big-heading-font-size);
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.footer > .footer-left > .email {
+    margin-top: var(--email-top-margin);
+    font-size: var(--email-font-size);
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+.footer > .footer-left > .subscribe {
+    margin-top: var(--subscribe-top-margin);
+    font-size: var(--subscribe-font-size);
+    font-weight: 700;
+}
+
+.footer > .footer-left > .email-input-container {
+    margin-top: var(--email-input-margin-top);
+    width: 100%;
+    position: relative;
+}
+.footer > .footer-left .email-input-label {
+    background-color: white;
+    font-size: var(--email-input-label-font-size);
+    color: var(--email-input-label-font-color);
+    position: absolute;
+    z-index: 1;
+    top: -0.5rem;
+    left: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.footer > .footer-left .email-input {
+    width: 100%;
+    min-width: var(--email-input-min-width);
+    height: var(--email-input-height);
+    border-radius: var(--email-input-border-radius);
+    padding: var(--email-input-padding);
+    font-size: var(--email-input-font-size);
+
+    background-image: url("/assets/icons/send.svg");
+    background-repeat: no-repeat;
+    background-size: var(--email-input-icon-size);
+    background-position-x: calc(100% - var(--email-input-padding));
+    background-position-y: center;
+
+    padding-right: 2.5rem;
+
+    border: 2px solid black;
+    position: relative;
+}
+.footer > .footer-left > .legal-links {
+    margin-top: var(--legal-links-margin-top);
+    font-size: var(--legal-links-font-size);
+    display: flex;
+    justify-content: sta;
+    align-items: center;
+    gap: var(--legal-links-gap);
+}
+
+.footer > .footer-left > .legal-links > a {
+    color: var(--legal-links-font-color);
+    text-decoration: none;
+}
+
+/* Right section of footer */
+.footer > .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer > .footer-right > .other-pages-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--other-pages-links-gap);
+
+    margin-top: var(--other-pages-links-margin-top);
+    font-size: var(--other-pages-links-font-size);
+}
+.footer > .footer-right > .other-pages-links > a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer > .footer-right > .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--social-media-gap);
+
+    margin-top: var(--social-media-margin-top);
+}
+.footer > .footer-right > .social-media > img {
+    width: var(--social-media-icon-size);
+    aspect-ratio: 1;
+}
+
+.footer > .footer-right > .copyright {
+    text-align: end;
+    margin-top: var(--copyright-margin-top);
+    font-size: var(--copyright-font-size);
+    color: var(--copyright-font-color);
+}
