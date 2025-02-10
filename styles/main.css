@@ -1,5 +1,6 @@
 /* Control buttons section */
 .main {
+    --control-buttons-margin-top: 2.5rem;
     --control-buttons-height: 3.5rem;
     --control-buttons-gap: 1rem;
     --control-buttons-gap-inside: 0.625rem;
