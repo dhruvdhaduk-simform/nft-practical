@@ -152,6 +152,10 @@
     gap: 1rem;
 }
 
+.creators-data th img {
+    cursor: pointer;
+}
+
 .creators-data .td-index,
 .creators-data .td-volume,
 .creators-data .td-sales,

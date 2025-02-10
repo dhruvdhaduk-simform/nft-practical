@@ -149,6 +149,7 @@
 .footer > .footer-right > .social-media > img {
     width: var(--social-media-icon-size);
     aspect-ratio: 1;
+    cursor: pointer;
 }
 
 .footer > .footer-right > .copyright {
