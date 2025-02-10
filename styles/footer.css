@@ -6,7 +6,7 @@
     --subscribe-top-margin: 2.5rem;
     --subscribe-font-size: 1rem;
     --email-input-margin-top: 1.5rem;
-    --email-input-min-width: 26.25rem;
+    --email-input-max-width: 26.25rem;
     --email-input-height: 3.5rem;
     --email-input-padding: 1rem;
     --email-input-font-size: 0.875rem;
@@ -49,6 +49,7 @@
 }
 
 .footer > .footer-left > .big-heading {
+    max-width: 28rem;
     font-size: var(--big-heading-font-size);
     line-height: 1.4;
     font-weight: 500;
@@ -86,7 +87,7 @@
 }
 .footer > .footer-left .email-input {
     width: 100%;
-    min-width: var(--email-input-min-width);
+    max-width: var(--email-input-max-width);
     height: var(--email-input-height);
     border-radius: var(--email-input-border-radius);
     padding: var(--email-input-padding);
