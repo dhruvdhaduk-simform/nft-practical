@@ -6,4 +6,43 @@
 
 :root {
     font-family: sans-serif;
+
+    --page-max-width: 71.25rem;
+    --header-height: 6.25rem;
+}
+
+body {
+    max-width: var(--page-max-width);
+    margin: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: var(--page-max-width);
+    margin: auto;
+    height: var(--header-height);
+
+    /* Temp. style */
+    background-color: red;
+}
+
+.main {
+    margin-top: var(--header-height);
+    width: 100%;
+
+    /* Temp. styles */
+    height: 5rem;
+    background-color: blue;
+}
+
+.footer {
+    width: 100%;
+    height: 4rem;
+
+    /* Temp. style */
+    background-color: green;
 }
