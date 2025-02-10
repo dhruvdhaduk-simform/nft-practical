@@ -2,6 +2,11 @@
 .main {
     --control-buttons-height: 3.5rem;
     --control-buttons-gap: 1rem;
+    --control-buttons-gap-inside: 0.625rem;
+    --control-buttons-font-size: 1.25rem;
+    --control-buttons-icon-size: 1.5rem;
+    --control-buttons-bg-color: #EBEDF2;
+    --control-buttons-border-radius: 0.625rem;
 }
 
 .main .control-buttons {
@@ -16,7 +21,41 @@
 
 .main .control-buttons > button {
     flex: none;
+
+    min-width: var(--control-buttons-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--control-buttons-gap-inside);
+    background-color: var(--control-buttons-bg-color);
+    border: none;
+    border-radius: var(--control-buttons-border-radius);
+    cursor: pointer;
 }
+
+.main .control-buttons > button > span {
+    font-size: var(--control-buttons-font-size);
+}
+
+.main .control-buttons > button > img {
+    width: var(--control-buttons-icon-size);
+    aspect-ratio: 1;
+}
+
+/* Set the horizontal padding for different buttons */
+.main .control-buttons > .filters-btn {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+.main .control-buttons > .nfts-btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.main .control-buttons > .sort-btn {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+}
+
 .main .control-buttons > .searchbar {
     flex: 1;
 }
